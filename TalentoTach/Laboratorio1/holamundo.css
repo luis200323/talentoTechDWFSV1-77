@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(48, 86, 212);
+}
+p {
+  color: black;
+  font: 100; /*Estolos de fuente de letras*/
+}
+#titulo1 {
+  /*para estilizar id*/
+  color: azure;
+  font-size: 85px;
+  width: 75%;
+  text-align: center;
+  background-color: brown; /*util para identificar el limite del contenido*/
+  padding: 20px; /*distancia del borde y adentro*/
+  margin: 20px; /*separa el contenido externamente borde y afuera*/
+  border-radius: 10px; /*sirve para redondear las esquinas de la caja*/
+}
+.subtitulos {
+  /*Para estilizar clases*/
+  color: aquamarine;
+}

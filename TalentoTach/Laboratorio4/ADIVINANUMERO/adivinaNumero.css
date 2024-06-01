@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  /*background-color: #f0f0f0;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://img.freepik.com/fotos-premium/pirata-informatico-linea_863013-36829.jpg?w=740);
+  background-position: center center;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(16, 6, 163, 0.767); /*rgba(0, 0, 0, 0.1)*/
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8cb300;
+}
+
+p {
+  margin: 10px 0;
+}

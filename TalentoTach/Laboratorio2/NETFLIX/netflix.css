@@ -1,0 +1,133 @@
+img {
+  width: 150px;
+  height: 45px;
+  padding-top: 20px;
+  padding-left: 150px;
+}
+
+#cuerpoprincipal {
+  display: flex;
+  justify-content: center;
+}
+#loginprincipal {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 350px;
+  height: 550px;
+  padding: 48px 68px;
+  border-radius: 5px;
+  margin-top: 30px; /*separa el login del encabezado*/
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+#inicioletras {
+  color: white;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.login-form input {
+  width: calc(100% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  background-color: #333333ce;
+  color: #fff;
+  height: 30px;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button.button2 {
+  width: 100%;
+  padding-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.747);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.forgot-password {
+  display: block;
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 18px;
+}
+
+.signup-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 20px;
+}
+
+.separator {
+  height: 1px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+label,
+a {
+  color: #fff;
+}
+
+span {
+  color: rgba(255, 255, 255, 0.7);
+}
+p a {
+  color: #0071eb;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.footer-links li a {
+  color: #fff;
+  /*text-decoration: none;*/
+}
+
+.piefinal {
+  background-color: rgba(10, 7, 3, 0.404);
+  height: 200px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  /*padding-left: 60px;
+  padding-right: 60px;*/
+}
+
+.piefinal div p {
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 50px;
+}
