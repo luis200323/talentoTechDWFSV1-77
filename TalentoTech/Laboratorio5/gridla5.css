@@ -1,0 +1,131 @@
+header {
+  height: 50px;
+  text-align: center;
+  padding-top: 50px;
+  background-color: aqua;
+  font-size: 45px;
+}
+
+.container {
+  padding-left: 30px;
+}
+
+#searchCategory {
+  width: 200px;
+  height: 36px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  font-size: 16px;
+  outline: none;
+}
+
+#searchCategory:focus {
+  border-color: #333;
+}
+#searchButton {
+  background-color: #007bff;
+  color: white;
+  height: 36px;
+  border-radius: 0 20px 20px 0;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+#searchButton:focus {
+  border-color: green;
+  background-color: greenyellow;
+}
+
+form.label,
+input {
+  width: 270px;
+  height: 36px;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  font-size: 16px;
+  outline: none;
+}
+
+#bookForm label,
+#bookForm input {
+  display: flex;
+  flex-direction: column;
+}
+#bookForm button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Cambiado para ajustar el ancho del botón */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#addButton {
+  background-color: #007bff;
+  color: white;
+  height: 36px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+#addButton:focus {
+  border-color: green;
+  background-color: greenyellow;
+}
+
+header h1 {
+  padding-top: 50px;
+}
+
+.gallery {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: stretch;
+}
+
+.gallery div:first-child {
+  grid-area: span 2;
+}
+
+.image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.image:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.788);
+  color: #fff;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer {
+  background-color: blueviolet;
+  height: 200px;
+}

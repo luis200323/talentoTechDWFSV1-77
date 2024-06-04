@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gridla5.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>BIBLIOTECA VIRTUAL</header>
+    <div class="gallery">
+      <div class="container">
+        <div class="search-container">
+          <h2>Buscar Libros por Categoría</h2>
+          <input
+            type="text"
+            id="searchCategory"
+            placeholder="Ingrese categoría"
+          />
+          <button id="searchButton">Buscar</button>
+          <div id="searchResults"></div>
+        </div>
+        <div class="form-container">
+          <h2>Agregar Nuevo Libro</h2>
+          <form id="bookForm">
+            <label for="title">Título:</label>
+            <input type="text" id="title" required /><br />
+            <label for="author">Autor:</label>
+            <input type="text" id="author" required /><br />
+            <label for="year">Año de Publicación:</label>
+            <input type="number" id="year" required /><br />
+            <label for="category">Categoría:</label>
+            <input type="text" id="category" required /><br />
+            <button type="submit" id="addButton">Agregar Libro</button>
+          </form>
+        </div>
+        <div class="json-container">
+          <h2>Colección en JSON</h2>
+          <pre id="jsonOutput"></pre>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v3/books/causa-pendiente-al-atardecer-600.jpg"
+          alt="Imagen 2"
+        />
+        <div class="overlay">
+          <h3>Causa pendiente al atardecer</h3>
+          <span>Juan José Fernández Morales</span>
+          <h4>Enero de 2024</h4>
+          <p>Novela negra</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/umbral-de-sombras-lejos-de-las-cosas-600.jpg"
+          alt="Imagen 3"
+        />
+        <div class="overlay">
+          <h3>Umbral de sombras. Lejos de las cosas</h3>
+          <span> Luis Melero Marcos</span>
+          <h4>Enero de 2024</h4>
+          <p>Poesía contemporánea</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/chirimiri-el-nido-de-los-suenos-2-edicion-600.jpg"
+          alt="Imagen 4"
+        />
+        <div class="overlay">
+          <h3>Chirimiri, el nido de los sueños (2ª Edición)</h3>
+          <span>Ramiro Pinto Cañón</span>
+          <h4>Enero de 2024</h4>
+          <p>Narrativa</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/las-lagrimas-de-jon-kapuleto-600.jpg"
+          alt="Imagen 5"
+        />
+        <div class="overlay">
+          <h3>Las lágrimas de Jon Kapuleto</h3>
+          <span>Errikarta Rodríguez y Eduardo Blázquez Mateos</span>
+          <h4>Noviembre de 2023</h4>
+          <p>Narrativa histórica</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/el-sendero-de-thra-600.jpg"
+          alt="Imagen 6"
+        />
+        <div class="overlay">
+          <h3>El sendero de Thra</h3>
+          <span>Lola Valeri</span>
+          <h4>Noviembre de 2023</h4>
+          <p>Narrativa de autoayuda</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/los-encantes-600.jpg"
+          alt="Imagen 7"
+        />
+        <div class="overlay">
+          <h3>Los encantes</h3>
+          <span>Dante Antón</span>
+          <h4>Noviembre de 2023</h4>
+          <p>Novela actual</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/aurora-600.jpg"
+          alt="Imagen 8"
+        />
+        <div class="overlay">
+          <h3>Aurora</h3>
+          <span>Eduardo Muñoz González</span>
+          <h4>Noviembre de 2023</h4>
+          <p>Poesía actual</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/itinerario-poetico-musical-600.jpg"
+          alt="Imagen 9"
+        />
+        <div class="overlay">
+          <h3>Iteración poético musical</h3>
+          <span>Marcos Azzam Gómez</span>
+          <h4>Septiembre de 2023</h4>
+          <p>Poesía</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/la-mirada-de-tales-600.jpg"
+          alt="Imagen 10"
+        />
+        <div class="overlay">
+          <h3>La mirada de Tales</h3>
+          <span>Javier Bravo</span>
+          <h4>Septiembre de 2023</h4>
+          <p>Narrativa histórica</p>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://d3bj2wkomrw52r.cloudfront.net/static-img/v2/books/volver-600.jpg"
+          alt="Imagen 1"
+        />
+        <div class="overlay">
+          <h3>Volver</h3>
+          <span>Javier Martín Lázaro (Jotamar)</span>
+          <h4>Enero de 2024</h4>
+          <p>Poesía contemporánea</p>
+        </div>
+      </div>
+    </div>
+    <footer></footer>
+    <script src="laboratorio5.js"></script>
+  </body>
+</html>
